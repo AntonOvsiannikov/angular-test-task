@@ -1,0 +1,8 @@
+<div class="page">
+  <div class="page-wrapper">
+    <app-page-title [title] = "'Page Shop'"></app-page-title>
+    <p *ngIf="loading" class="loader">Loading...</p>
+    <app-product *ngFor="let productItem of productArr$ | async" [productItem]="productItem"></app-product>
+  </div>
+</div>
+

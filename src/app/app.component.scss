@@ -1,0 +1,23 @@
+@import '../variable.scss';
+
+.page {
+  @include font-pathway-extreme;
+
+  background: $color-main;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color:$color-second;
+  min-height: 100vh;
+
+  &-wrapper {
+    width: 70%;
+  }
+}
+.loader {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300;400;500;600;700&display=swap');
+
+// === Mixins ===
+
+@mixin font-pathway-extreme {
+  font-family: 'Pathway Extreme', sans-serif;
+}
+
+// / === Mixins ===
+// === Variables ===
+
+$color-main:black;
+$color-second:white;
+
+// / === Variables ===

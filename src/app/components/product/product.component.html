@@ -1,0 +1,35 @@
+<div class="product">
+  <div class="product-content">
+    <div class="product-content-row">
+      <span class="product-content-row__title">Title:</span> {{productItem.title}}
+    </div>
+    <div class="product-content-row">
+      <span class="product-content-row__title">Price:</span> {{productItem.price | currency}}
+    </div>
+    <div class="product-content-row">
+      <span class="product-content-row__title">Category:</span> {{productItem.category}}
+    </div>
+    <div class="product-content-row">
+      <span class="product-content-row__title">Rating:</span> {{productItem.rating.rate}}
+    </div>
+    <div class="product-content-btn" [ngClass]="{'hide':details}">
+      <button
+        (click)="details = !details"
+      >
+      {{!details ? 'Show' : 'Hide'}} Details</button>
+    </div>
+    <div *ngIf="details">
+      <div><span class="product-content-row__title">Description:</span></div>
+      <div class="product-content-row__description">{{productItem.description}}</div>
+    </div>
+    <div class="product-content-btn" [ngClass]="{'hide':!details}">
+      <button
+        (click)="details = !details"
+      >
+      {{!details ? 'Show' : 'Hide'}} Details</button>
+    </div>
+  </div>
+  <div class="product-img">
+    <img [src]="productItem.image" [alt]="productItem.title">
+  </div>
+</div>
