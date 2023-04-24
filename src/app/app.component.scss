@@ -4,15 +4,14 @@
   @include font-pathway-extreme;
 
   background: $color-main;
-  display: flex;
-  justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
   color:$color-second;
   min-height: 100vh;
 
   &-wrapper {
+    padding: 15px 0;
     width: 70%;
+    margin: 0 auto;
+    position: relative;
   }
 }
 .loader {

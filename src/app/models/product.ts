@@ -1,5 +1,5 @@
 export interface IProduct {
-  id:number,
+  id?:number,
   title:string,
   price:number,
   description:string,
@@ -10,4 +10,9 @@ export interface IProduct {
 interface IRate {
   rate:number,
   count:number
+}
+export interface IInputField {
+  type:string,
+  placeholder:string,
+  formControlName:string
 }

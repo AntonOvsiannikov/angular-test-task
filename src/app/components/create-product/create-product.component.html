@@ -1,0 +1,18 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="add-form">
+  <div class="add-form__field">
+    <input
+      *ngFor="let inputField of inputFieldArr" 
+      [type] = "inputField.type" 
+      [placeholder] = "inputField.placeholder"
+      [formControlName] = "inputField.formControlName"
+    />
+  </div>
+  <div class="add-form__btn">
+    <button
+      type="submit"
+      class="add-form__btn"
+    >
+      Add
+    </button>
+  </div>
+</form>

@@ -1,0 +1,28 @@
+@import '../../../variable.scss';
+
+.modal {
+  background: $color-second;
+  opacity: 15%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  &-wrapper {
+    width: 800px;
+    height: 550px;
+    background: $color-main;
+    position: fixed;
+    padding: 6px;
+    border-radius: 25px;
+    top:200px;
+    left:30%;
+    z-index: 1;
+  
+    &__title {
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+}

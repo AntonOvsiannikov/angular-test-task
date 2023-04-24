@@ -1,8 +1,16 @@
+
 <div class="page">
+  <app-global-error></app-global-error>
+  <app-menu-btn (click)="modalService.open()"></app-menu-btn>
+  <app-modal *ngIf="modalService.isVisible$ |  async" [title]="'Create Product'">
+    <app-create-product></app-create-product>
+  </app-modal>
   <div class="page-wrapper">
     <app-page-title [title] = "'Page Shop'"></app-page-title>
     <p *ngIf="loading" class="loader">Loading...</p>
-    <app-product *ngFor="let productItem of productArr$ | async" [productItem]="productItem"></app-product>
+    <div *ngIf="productService.products">
+      <app-product *ngFor="let productItem of productService.products" [productItem]="productItem"></app-product>
+    </div>
   </div>
 </div>
 

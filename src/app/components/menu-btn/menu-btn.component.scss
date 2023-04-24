@@ -1,0 +1,18 @@
+@import '../../../variable.scss';
+
+.btn-menu {
+  position: fixed;
+  top:7%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 14%;
+  margin: 10px;
+
+  &__btn {
+    @include light-btn-effect;
+    @include common-btn;
+
+    margin: 10px 0;
+  }
+}

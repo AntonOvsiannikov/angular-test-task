@@ -27,6 +27,16 @@
         (click)="details = !details"
       >
       {{!details ? 'Show' : 'Hide'}} Details</button>
+      <button
+        (click)="details = !details"
+      >
+        Update
+      </button>
+      <button
+        (click)="removeProduct(this.productItem.id)"
+      >
+        Delete
+      </button>
     </div>
   </div>
   <div class="product-img">
